@@ -46,3 +46,22 @@ class SplashScreenRoute extends PageRouteInfo<void> {
     },
   );
 }
+
+/// generated route for
+/// [WeatherDetailView]
+class WeatherDetailRoute extends PageRouteInfo<void> {
+  const WeatherDetailRoute({List<PageRouteInfo>? children})
+      : super(
+          WeatherDetailRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'WeatherDetailRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const WeatherDetailView();
+    },
+  );
+}

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:weather_app_uplide/core/init/get_it/app_get_it.dart';
 import 'package:weather_app_uplide/core/init/routes/app_router.dart';
 import 'package:weather_app_uplide/pages/weather/view_model/weather_view_model.dart';
 
 void main() {
+  setupLocator();
   runApp(
     MultiProvider(
       providers: [
@@ -15,15 +17,14 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
- final appRouter = AppRouter();
+  final appRouter = AppRouter();
   MyApp({super.key});
-
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'Flutter Demo',
       routerConfig: appRouter.config(),
-      
     );
   }
 }

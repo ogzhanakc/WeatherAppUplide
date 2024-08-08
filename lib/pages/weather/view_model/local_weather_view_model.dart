@@ -1,0 +1,6 @@
+class LocalWeatherViewModel {
+
+
+  // Localden çekilecek
+  
+}
